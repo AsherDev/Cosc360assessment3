@@ -2,13 +2,18 @@ import express, { Express, Request, Response } from 'express'
 import dotenv from 'dotenv'
 import mongoose from 'mongoose'
 
+import authHandler from './handler/auth.handler'
+
 import connectDB from './util/connectDB'
 
 dotenv.config()
 
+
 connectDB()
 
 const app: Express = express()
+app.use('/auth', authHandler)
+
 const port = process.env.PORT
 app.use(express.json())
 

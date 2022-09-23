@@ -6,7 +6,7 @@ export async function getUserByUsername(username: string) {
     return UserModel.findOne({ username }).lean()
 }
 
-export async function getUserByID(id: string) {
+export async function getUserById(id: string) {
     return UserModel.findOne({ _id: new mongoose.Types.ObjectId(id) }).lean()
 }
 
