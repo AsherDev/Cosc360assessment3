@@ -12,14 +12,10 @@ dotenv.config()
 connectDB()
 
 const app: Express = express()
-app.use('/auth', authHandler)
-
 const port = process.env.PORT
 app.use(express.json())
 
-app.get('/', (req: Request, res: Response) => {
-    res.send('hello world...')
-})
+app.use('/api/auth', authHandler)
 
 mongoose.connection.once('connected', () => {
     console.log('[server]: Connected to MongoDB.')
@@ -27,3 +23,5 @@ mongoose.connection.once('connected', () => {
         console.log(`[server]: Server is running at http://localhost:${port}`)
     })
 })
+
+export default app
