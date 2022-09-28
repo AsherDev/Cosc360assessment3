@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { useLocalStorage } from '../hooks'
-import { Board, Button } from '../components'
+import { Board, Button } from '../components/Index'
 import { isGameEnded } from '../utils'
 import { AVAILABLE_GAME_SIZES, GAME_STATUS } from '../constants'
 import type { Position, GameData } from '../types'

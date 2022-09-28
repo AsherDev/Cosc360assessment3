@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import { useLocalStorage } from '../hooks'
-import { Board, Button } from '../components'
+import { Board, Button } from '../components/Index'
 import type { GameData } from '../types'
 
 import style from './GameLog.module.css'

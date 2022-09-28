@@ -1,7 +1,7 @@
 .button {
   width: 100%;
   align-items: center;
-  background-color: #cc3300;
+  background-color: #028502;
   border: 0;
   border-radius: 1rem;
   box-sizing: border-box;
@@ -19,12 +19,12 @@
   user-select: none;
 }
 
-.button:hover { 
-  background-color: #f30a02;
+.button:hover {
+  background-color: #145704;
   color: #ffffff;
 }
 
-.button:disabled { 
+.button:disabled {
   cursor: not-allowed;
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);

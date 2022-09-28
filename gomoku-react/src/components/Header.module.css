@@ -1,19 +1,19 @@
-.header {
-  font-size: 2.5rem;
-  padding: 1rem;
-  background-color: #cc3300;
-  color: #FFFFFF;
-  font-weight: bolder;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .container {
   display: flex;
   width: 90%;
   max-width: 1200px;
   justify-content: space-between;
   margin: auto;
+}
+
+.header {
+  font-size: 2.5rem;
+  padding: 1rem;
+  background-color: #028502;
+  color: #FFFFFF;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .actions {

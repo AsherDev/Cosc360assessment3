@@ -21,7 +21,7 @@ authHandler.post(
             const existingUser = await getUserByUsername(username)
 
             if (existingUser) {
-                return res.status(409).send('User Already Exist. Please Login')
+                return res.status(409).send('User Already Exists. Please Login')
             }
             const encryptedPassword = await bcrypt.hash(password, 10)
 
@@ -54,7 +54,7 @@ authHandler.post(
 
                 return res.status(200).json({ _id: user._id, token })
             }
-            return res.status(400).send('Invalid Credentials')
+            return res.status(400).send('Invalid Credentials, please try again.')
         } catch (err) {
             return res.status(500).send(err)
         }

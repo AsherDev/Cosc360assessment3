@@ -1,13 +1,31 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Button } from '../components'
+import { Button } from '../components/Index'
 import { AVAILABLE_GAME_SIZES } from '../constants'
+import { UserContext } from '../context'
 
 import style from './Home.module.css'
 
 export default function Home() {
   const navigate = useNavigate()
   const [size, setSize] = useState(10)
+  const { user } = useContext(UserContext)
+
+  const getActions = () => {
+    if (user) {
+      return (
+        <>
+          <Button onClick={() => navigate('game')}>Start</Button>
+        </>
+      )
+    } else {
+      return (
+        <>
+          <Button onClick={() => navigate(`login`)}>Start</Button>
+        </>
+      )
+    }
+  }
 
   return (
     <>
@@ -25,9 +43,7 @@ export default function Home() {
           ))}
         </select>
       </label>
-      <Button type="button" onClick={() => navigate(`game?size=${size}`)}>
-        Start Game
-      </Button>
+      {getActions()}
     </>
   )
 }
