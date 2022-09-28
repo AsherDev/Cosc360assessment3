@@ -15,7 +15,7 @@ export default function Home() {
     if (user) {
       return (
         <>
-          <Button onClick={() => navigate('game')}>Start</Button>
+          <Button onClick={() => navigate(`game?size=${size}`)}>Start</Button>
         </>
       )
     } else {
