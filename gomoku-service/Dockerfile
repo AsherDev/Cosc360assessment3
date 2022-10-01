@@ -9,9 +9,4 @@ ADD ./.env ./
 
 RUN npm install
 
-RUN npm install mongoose
-RUN npm install zod
-RUN npm install jsonwebtoken
-
-
 CMD ["npm", "run", "dev"]
