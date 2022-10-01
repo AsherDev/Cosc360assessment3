@@ -13,3 +13,5 @@ export enum GAME_STATUS {
   WHITE_WIN = 'White player wins',
   DRAW = 'The game is a draw',
 }
+
+export const API_HOST = process.env.REACT_APP_API_HOST || ''
