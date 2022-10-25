@@ -17,4 +17,7 @@ Pre-configured login:
     Username: bwatso25
     Password: 123456
 
+Or Alternatively:
+    Create a username and password and login with that.
+
 Link to Postman Collection: https://www.getpostman.com/collections/af08cad4eea3bed4600d
