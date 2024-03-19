@@ -1,6 +1,4 @@
 Author: Bryce Watson
-Student ID: 220199390
-UNE Username: bwatso25
 
 This is my full stack application for Gomoku.
 
