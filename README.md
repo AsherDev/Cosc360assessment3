@@ -1,6 +1,4 @@
 Author: Bryce Watson
-Student ID: 220199390
-UNE Username: bwatso25
 
 This is my full stack application for Gomoku.
 
@@ -16,8 +14,5 @@ Step 2: To run the application, open another terminal window, navigate to gomoku
 Pre-configured login:
     Username: bwatso25
     Password: 123456
-
-Or Alternatively:
-    Create a username and password and login with that.
 
 Link to Postman Collection: https://www.getpostman.com/collections/af08cad4eea3bed4600d
